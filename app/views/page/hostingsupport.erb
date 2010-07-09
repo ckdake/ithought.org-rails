@@ -1,0 +1,24 @@
+<h1>Hosting Support</h1>
+<h2>I think something is broken!</h2>
+<p>First visit: <a href="http://status.ithought.org/">status.ithought.org</a> to see if any known issues are listed. If everything listed there is in GOOD status and you are still having trouble, please send me an e-mail.</p>
+
+<h2>I want to call you to ask about a problem!</h2>
+<p>Phone support is not included in any of our hosting plans. If someone charges you $100/year and offers free phone support, they are cutting corners somewhere and not telling you the full story. Phone Support is available on a paid basis: Each Support incident is $100 for the first hour rounded up to the hour, and $50/hour for additional hours rounded up to the next 30-min interval. E-mail if you need a support phone call</p>
+
+<h2>How can I check my email with an e-mail program?</h2>
+<p>Use "<b>mail.ithought.org</b>" as the server name for both incoming and outgoing e-mail.  You should use SSL for everything, but if your e-mail program doesn't support SSL, it is not required.  Outgoing mail is available on alternate ports including 465 in case your ISP blocks outgoing mail on port 25, otherwise everything is on the default ports.</p>
+
+<h2>How can I check my email with a web browser?</h2>
+<p>Webmail is available at <a href="https://secure.ithought.org/webmail/">https://secure.ithought.org/webmail/</a>. To be able to send email using webmail, you'll need to create an "identity" the first time you log in by going to "personal settings", then "identities" and then clicking the "new identity" button at the bottom of the page and filling out the form.</p>
+
+<h2>How can I change my email password?</h2>
+<p>For now this is at <a href="https://secure.ithought.org/changeemailpassword.php">https://secure.ithought.org/changeemailpassword.php</a>. This should change in the near future, check back here for updates.</p>
+
+<h2>How do I set up my files?</h2>
+<p>In your home folder on the server are folders for each of your domain names. Inside of them are "htdocs" folders which is the root level folder for that domain name.  Any files that you want to be on your website should be inside this folder.  All directories should have their permissions be set to 550 and all files should have their's set to 440. If for any reason you have a PHP program that should be able to write to a directory, that directory's permissions should be 750 and any writable files should be set to 640. (Technical description of what's going on: Apache is running as the Apache user which is in your group, so it can access things as your group. However, PHP runs as your user, so anything PHP does will be bound by the permissions of the files as related to you. This adds a bit of security, and if you make sure that none of your files are world or group writable, if a website on the same server as you is hacked there is no easy way for the hackers to damage your website.) Note: .htaccess files must be readable by your group or your site will not work.</p>
+
+<h2>I want to let people know I'm using your services, how do I let them know?</h2>
+<p>Thanks for asking! Linking to ithought.org is a great start, and here are two images you can use to link here:
+<img style="margin: 10px;" src="/img/ithought.gif" alt="ithought.org"><br />
+<img style="margin: 10px;" src="/img/ithought_border.gif" alt="ithought.org">
+</p>

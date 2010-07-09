@@ -127,7 +127,7 @@ blockquote {
 	color: #fff;
 	line-height: 26px;
 	font-weight: bold;
-	background-image: url(/img/module_top.gif);
+	background-image: url(/images/module_top.gif);
 }
 #right .box p {
 	margin: 5px;
@@ -181,7 +181,7 @@ blockquote {
 	border-right: 1px solid #bebebe;
 	clear: both;
 	height: 26px;
-	background-image: url(/img/menu_bar.gif);
+	background-image: url(/images/menu_bar.gif);
 }
 
 #menu {
