@@ -17,6 +17,9 @@ ActionController::Routing::Routes.draw do |map|
     page.consultingservices 'consulting/services.html', :id => 'consultingservices'
     page.consultingtestimonials 'consulting/testimonials.html', :id => 'consultingtestimonials'
   end
+  
+  map.connect 'testimonial/:id', :controller => 'testimonial', :action => 'view'
+  map.static 'status', :controller => 'status', :action => 'view'
 
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'

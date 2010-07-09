@@ -27,14 +27,14 @@ var numtest = 11;
 
 function init_testimonial() {
 	curtest = Math.ceil(numtest*Math.random());
-	$("#tt").load("/testimonial.php", {curtest: curtest});
+	$("#tt").load("/testimonial/", {curtest: curtest});
 	$("#wt").text(curtest + "/" + numtest);
 }
 
 function switch_testimonial(increment) {
 	$("#tt").hide();
 	curtest += increment;
-	$("#tt").load("/testimonial.php", {curtest: curtest});
+	$("#tt").load("/testimonial/", {curtest: curtest});
 	$("#wt").text(curtest + "/" + numtest);
 	$("#tt").fadeIn('fast');
 }
@@ -56,7 +56,7 @@ $(document).ready(function() {
 	$('#la').bind('click', left_arrow);
 	$('#ra').bind('click', right_arrow);
 	init_testimonial();
-	$('#status').load('/status.php');
+	$('#status').load('/status');
 });
 
 document.onclick = menu_close;
