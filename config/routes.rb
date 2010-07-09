@@ -8,7 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options :controller => 'page', :action => 'view' do |page|
     page.hostingpayment 'hosting/payment.html', :id => 'hostingpayment'
     page.hostingservices 'hosting/services.html', :id => 'hostingservices'
-    page.hostingsignup 'hosting/singup.html', :id => 'hostingsignup'
+    page.hostingsignup 'hosting/signup.html', :id => 'hostingsignup'
     page.hostingsupport 'hosting/support.html', :id => 'hostingsupport'
     page.hostingtestimonials 'hosting/testimonials.html', :id => 'hostingtestimonials'
     page.hostingplatform 'hosting/platform.html', :id => 'hostingplatform'
